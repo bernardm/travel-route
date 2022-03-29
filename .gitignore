@@ -1,0 +1,17 @@
+# OS files
+.DS_Store
+
+# Node
+node_modules/*
+
+# Build
+dist
+dist-ssr
+*.local
+public/*
+
+# Editor
+.vscode
+
+# private files
+plan/*
