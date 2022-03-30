@@ -2,16 +2,13 @@
 .DS_Store
 
 # Node
-node_modules/*
+node_modules/
 
 # Build
-dist
-dist-ssr
-*.local
-public/*
+dist/
 
 # Editor
-.vscode
+.vscode/
 
-# private files
-plan/*
+# Local project files
+_private/
