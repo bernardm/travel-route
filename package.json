@@ -14,6 +14,7 @@
   "type": "module",
   "scripts": {
     "preinstall": "npx only-allow yarn",
+    "postinstall": "npx simple-git-hooks",
     "format": "prettier --write .",
     "lint": "eslint --fix {src,test,script}/**/*.j* && csslint --format=compact src/**/*.css",
     "dev": "vite",
@@ -42,6 +43,21 @@
   },
   "homepage": "https://github.com/bernardm/travel-route#readme",
   "packageManager": "yarn@1.22.15",
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged --concurrent false",
+    "commit-msg": "node script/verifyCommit.js $1"
+  },
+  "lint-staged": {
+    "*": [
+      "prettier --write --ignore-unknown"
+    ],
+    "{src,test,script}/**/*.js*": [
+      "eslint --fix"
+    ],
+    "src/**/*.css": [
+      "csslint --format=compact"
+    ]
+  },
   "dependencies": {
     "@types/react": "^17.0.13",
     "@types/react-dom": "^17.0.8",
@@ -54,6 +70,8 @@
     "eslint": "^8.12.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-react": "^7.29.4",
+    "lint-staged": "^12.4.1",
+    "simple-git-hooks": "^2.7.0",
     "static-server": "^2.2.1"
   }
 }
