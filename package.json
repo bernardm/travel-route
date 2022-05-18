@@ -13,7 +13,7 @@
   "browser": "src/App.jsx",
   "type": "module",
   "scripts": {
-    "lint": "eslint --fix {src,test,script}/**/*.j*",
+    "lint": "eslint --fix {src,test,script}/**/*.j* && csslint --format=compact src/**/*.css",
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
