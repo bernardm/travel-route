@@ -1,2 +1,2 @@
-run="npm run dev"
+run="npm run serve-prototype"
 entrypoint="src/App.jsx"

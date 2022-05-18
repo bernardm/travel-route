@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>App Prototype</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <section class="section">
+      <div class="container">
+        <div class="columns is-desktop">
+          <div class="column"></div>
+          <div class="column"></div>
+        </div>
+      </div>
+    </section>
+    <form class="form-horizontal">
+      <fieldset>
+        <!-- Form Name -->
+        <legend class="is-centered is-size-1">Travel Route</legend>
+        <!-- Text input-->
+
+        <label class="label" for="Search">Search</label>
+        <p class="help">Specify the name of the address</p>
+        <input
+          type="text"
+          placeholder="Address Name"
+          class="input column is-2"
+        />
+
+        <div class="control is-flex">
+          <input
+            class="input column is-2 mt-4"
+            id="Search"
+            name="Search"
+            type="text"
+            placeholder="Type Destination"
+          />
+          <button class="button is-primary is-light is-normal mt-4">
+            <i class="fa-solid fa-circle-plus"></i>
+          </button>
+        </div>
+        <div class="container column is-centered">
+          <label class="label" for="">Addresses</label>
+          <div class="control">
+            <label class="checkbox">
+              <input type="checkbox" value="Option one" />
+              Address 1
+            </label>
+            <button class="button is-primary is-light is-small">
+              <i class="fas fa-pencil"></i>
+            </button>
+            <a class="delete is-danger is-light is-medium"></a>
+            <label class="checkbox">
+              <input type="checkbox" value="Option two" />
+              Address 2
+            </label>
+            <button class="button is-primary is-light is-small">
+              <i class="fas fa-pencil"></i>
+            </button>
+
+            <a class="delete is-danger is-light is-medium"></a>
+            <p></p>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+
+    <div class="column">
+      <img width="640" height="360" src="https://i.stack.imgur.com/HILmr.png" />
+    </div>
+  </body>
+</html>
