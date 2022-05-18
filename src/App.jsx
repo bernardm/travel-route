@@ -1,12 +1,8 @@
-import React from 'react';
-import './App.css';
+import React from 'react'
+import './App.css'
 
 function App() {
-  return (
-    <main>
-      React⚛️ + Vite⚡ + Replit🌀
-    </main>
-  );
+  return <main>React⚛️ + Vite⚡ + Replit🌀</main>
 }
 
-export default App;
+export default App

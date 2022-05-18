@@ -1,11 +1,42 @@
 {
-  "name": "traveling-tutor",
-  "version": "0.0.1",
+  "name": "travel-route",
+  "version": "0.1.0",
+  "description": "Plan the shortest route between a set of addresses.",
+  "keywords": [
+    "route planning",
+    "shortest path",
+    "travel",
+    "address"
+  ],
+  "license": "MIT",
+  "private": true,
+  "browser": "src/App.jsx",
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview"
   },
+  "files": [
+    "dist"
+  ],
+  "directories": {
+    "doc": "docs",
+    "src": "src",
+    "test": "test"
+  },
+  "author": "Bernard Martis (https://bernardm.github.io/)",
+  "contributors": [
+    "Veli Furkan (https://github.com/FurkanCodes/)"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bernardm/travel-route.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bernardm/travel-route/issues"
+  },
+  "homepage": "https://github.com/bernardm/travel-route#readme",
   "dependencies": {
     "@types/react": "^17.0.13",
     "@types/react-dom": "^17.0.8",
