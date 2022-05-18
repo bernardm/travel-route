@@ -13,6 +13,7 @@
   "browser": "src/App.jsx",
   "type": "module",
   "scripts": {
+    "format": "prettier --write .",
     "lint": "eslint --fix {src,test,script}/**/*.j* && csslint --format=compact src/**/*.css",
     "dev": "vite",
     "build": "vite build",
